@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(19, 19, 19);
+}
+header {
+  background-color: antiquewhite;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100vw; */
+  padding: 1vw 2vw;
+  margin-bottom: 30px;
+}
+nav h1 {
+  font-size: 4.4vw;
+  color: rgb(19, 19, 19);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 2.4vw;
+  font-weight: 600;
+}
+nav ul li:last-child {
+  background-color: rgba(224, 174, 7, 0.801);
+  padding: 0.6vw 1vw;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0.2px rgba(128, 128, 128, 0.486);
+}
+/* titel section */
+.titel {
+  width: 70%;
+  margin: 16px auto;
+  text-align: center;
+}
+.titel h1 {
+  font-size: 7vw;
+  padding: 10px 0px;
+  letter-spacing: -1px;
+}
+.titel p {
+  letter-spacing: -1px;
+  font-size: 13px;
+  padding: 2vw;
+  line-height: 18px;
+}
+.titel button {
+  border-radius: 4px;
+  background: rgb(255, 144, 14);
+  border: none;
+  padding: 8px;
+  margin: 14px 0 18px 0;
+}
+/* img section */
+.bennar {
+  width: 95%;
+
+  margin: auto;
+}
+.bennar img {
+  width: 100%;
+}
+/* main section */
+.img-section {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.img-section .fast-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  gap: 7px;
+}
+.img-section .fast-section .img {
+  width: 100%;
+}
+.img-section .fast-section img {
+  /* width: 140px; */
+  width: 100%;
+  border: 2px dashed rgba(128, 128, 128, 0.486);
+  border-radius: 5px;
+}
+.img-section .secoud-section {
+  width: 40%;
+}
+.img-section .secoud-section h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+.img-section .secoud-section h2 span {
+  color: rgb(255, 144, 14);
+}
+.img-section .secoud-section p {
+  font-size: 14px;
+  letter-spacing: -1px;
+  padding: 20px 0;
+}
+.img-section .secoud-section button {
+  border-radius: 4px;
+  background: rgb(255, 144, 14);
+  border: none;
+  padding: 8px;
+  margin: 14px 0 18px 0;
+}
+/* some Fact section */
+.acipment {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 10px;
+}
+.acipment p {
+  padding-left: 5px;
+  margin-left: 4px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-left: 2px solid rgba(255, 166, 0, 0.774);
+}
+.acipment h3 {
+  padding-left: 5px;
+  margin-left: 4px;
+  border-left: 2px solid rgba(255, 166, 0, 0.774);
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.item div {
+  border: 2px solid rgba(255, 143, 14, 0.89);
+  text-align: center;
+  border-top: none;
+  padding: 5px;
+  width: 150px;
+  height: 140px;
+  box-shadow: 0px 0px 5px 0.7px;
+}
+.item h3 {
+  border: none;
+}
+.item div img,
+h3,
+h4 {
+  padding: 5px;
+}
+.item h4 {
+  font-size: 14px;
+}
+.last-section{
+  background-color: rgba(255, 228, 196, 0.705);
+  width: 95%;
+  border: 2px solid red;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.last-section p{
+  font-size: 13px;
+  padding: 10px 5px 25PX 5PX;
+}
+.last-section div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.last-section div img{
+  width: 100px;
+}
+footer{
+  background-color: rgba(247, 149, 69, 0.582);
+  padding: 20px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
+
+@media all and (max-width: 550px) {
+  .img-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-section .secoud-section {
+    width: 60%;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .last-section div{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .last-section div img{
+    width: 80px;
+  }
+}
